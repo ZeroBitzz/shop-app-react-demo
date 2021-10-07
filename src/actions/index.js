@@ -1,40 +1,30 @@
-export const increment = () => {
+//portal gun actions
+export const incrementPortalGun = () => {
     return {
-        type: 'increment',
-    }
-}
-export const incrementUfo = () => {
-    return {
-        type: 'addUfo',
-    }
-}
-export const incrementPlanetEraser = () => {
-    return {
-        type: 'addPlanetEraser',
-    }
-}
-export const incrementPandorasBox = () => {
-    return {
-        type: 'addPandorasBox',
+        type: 'incrementPortalGun',
     }
 }
 export const decrementPortalGun = () => {
     return {
-        type: 'removePortalGun',
+        type: 'decrementPortalGun',
     }
 }
-export const decrementUfo = () => {
+
+//sword actions
+export const incrementSword = () => {
     return {
-        type: 'removeUfo',
+        type: 'incrementSword',
     }
 }
-export const decrementPlanetEraser = () => {
+export const decrementSword = () => {
     return {
-        type: 'removePlanetEraser',
+        type: 'decrementSword',
     }
 }
-export const decrementPandorasBox = () => {
+
+//remove all
+export const removeAll = () => {
     return {
-        type: 'removePandorasBox',
+        type: 'removeAll',
     }
 }

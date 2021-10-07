@@ -3,18 +3,20 @@ import { Button, Typography } from "@material-ui/core";
 
 //redux imports
 import { useSelector, useDispatch } from "react-redux";
-import { increment } from "../actions";
+import { incrementPortalGun, incrementSword } from "../actions";
 
 const Shop = () => {
-    const itemCount = useSelector(state => state.itemCounter)
+    const itemCount = useSelector(state => state.itemCounter.portalGunCount)
     console.log(itemCount)
     const dispatch = useDispatch();
-
+    const spacer = <div style={{width: '100%', height: 2}}></div>
 
     return (
         <div>
-            <Typography variant='h1' id='pCount'>portal guns {itemCount}</Typography>
-            <Button variant='contained' color='secondary' onClick={() => dispatch(increment())}>portal gun</Button>
+            <Typography variant='h2' id='pCount'>click item to add to cart</Typography>
+            <Button disabled={isMaxCount} variant='contained' color='secondary' onClick={() => dispatch(incrementPortalGun())}>portal gun</Button>
+            {spacer}
+            <Button variant='contained' color='secondary' onClick={() => dispatch(incrementSword())}>Sword</Button>
         </div>
     )
 }

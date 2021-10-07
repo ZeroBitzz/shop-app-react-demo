@@ -14,7 +14,7 @@ const Shop = () => {
     return (
         <div>
             <Typography variant='h2' id='pCount'>click item to add to cart</Typography>
-            <Button disabled={isMaxCount} variant='contained' color='secondary' onClick={() => dispatch(incrementPortalGun())}>portal gun</Button>
+            <Button variant='contained' color='secondary' onClick={() => dispatch(incrementPortalGun())}>portal gun</Button>
             {spacer}
             <Button variant='contained' color='secondary' onClick={() => dispatch(incrementSword())}>Sword</Button>
         </div>

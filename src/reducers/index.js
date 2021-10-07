@@ -1,12 +1,12 @@
-//the reducers are the initialization of the state and the ways to manipulate it, actions are the functions that utilize and execute 
+//REDUCER IMPORTS
 import itemCounter from './itemCounter';
 
-//combine reducers is self explanatory
+//REDUX IMPORTS
 import {combineReducers} from 'redux';
 
-//here it is all put into an object
+//ALL REDUCERS OBJECT
 const allReducers = combineReducers({
-    itemCounter
-})
+    itemCounter,
+});
 
 export default allReducers;

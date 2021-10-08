@@ -23,7 +23,7 @@ const About = () => {
             </Typography>
             <Button target='_blank' href='https://www.linkedin.com/in/broderick-howell-43b0161a4?trk=people-guest_people_search-card' color='primary' variant='contained'>Hire me</Button>
             {gridBreak}
-            <Button  target='_blank' href='https://github.com/ZeroBitzz' color='primary' variant='contained'>Visit Repo</Button>
+            <Button  target='_blank' href='https://github.com/ZeroBitzz/shop-app-react-demo' color='primary' variant='contained'>Visit Repo</Button>
         </Container>
     )
 }

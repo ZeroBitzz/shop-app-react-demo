@@ -31,7 +31,7 @@ const Shop = () => {
                 color='secondary' 
                 onClick={() => dispatch(incrementSword())}
             >Sword  $15</Button>
-            <Typography variant='h4' id='pCount'>Total Price:  {price}</Typography>
+            <Typography variant='h4' id='pCount'>Total Price:  ${price}</Typography>
         </div>
     )
 }
